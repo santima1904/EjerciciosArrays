@@ -8,6 +8,9 @@ public class Menu {
 
     public static void OpcionesMenu() {
         int eleccion;
+        System.out.println("Las notas son: ");
+        Calculos.meterDatos();
+        Calculos.verArray();
         System.out.println("Que eleccion desea hacer?");
         System.out.println("1.Nota media");
         System.out.println("2.Nota mas alta");
@@ -21,25 +24,19 @@ public class Menu {
     public static void switchElecciones(int eleccion){
         switch (eleccion){
             case 1:
-                Calculos.meterDatos();
-                Calculos.verArray();
                 Calculos.notaMedia();
                 break;
             case 2:
-                Calculos.meterDatos();
-                Calculos.verArray();
                 Calculos.notaMayor();
                 break;
             case 3:
-                Calculos.meterDatos();
-                Calculos.verArray();
                 Calculos.notaMenor();
                 break;
             case 4:
-                //TODO metodo alumnos con nota superior a la media
+                Calculos.notasSuperioresMedia();
                 break;
             case 5:
-                //TODO metodo alumnos con nota inferior a la media
+                Calculos.notasInferioresMedia();
                 break;
         }
     }

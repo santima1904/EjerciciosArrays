@@ -2,6 +2,7 @@ package Boletin81.Ejercicio2;
 
 public class Calculos {
 
+    private static int media;
     private static int  [] notas = new int[15];
 
     public static void meterDatos (){
@@ -22,7 +23,8 @@ public class Calculos {
         for(int i=0;i< notas.length;i++){
             total +=notas[i];
         }
-        System.out.println("La media es "+total/ notas.length);
+        media = total/ notas.length;
+        System.out.println("La media es "+media);
     }
 
     public static void notaMayor(){
@@ -30,7 +32,7 @@ public class Calculos {
         for(int i=0;i< notas.length;i++){
            if(notas[i] > mayor)
                 mayor = notas[i];
-        } 
+        }
         System.out.println("La mayor nota es: "+mayor);
     }
 
@@ -41,6 +43,24 @@ public class Calculos {
                 menor = notas[i];
         }
         System.out.println("La menor nota es: "+menor);
+    }
+
+    public static void notasSuperioresMedia(){
+        int contador=0;
+        for(int i=0;i< notas.length;i++){
+            if(notas[i] > media)
+                contador++;
+        }
+        System.out.println("Hay "+contador+" alumnos con notas superiores a la media");
+    }
+
+    public static void notasInferioresMedia(){
+        int contador=0;
+        for(int i=0;i< notas.length;i++){
+            if(notas[i] < media)
+                contador++;
+        }
+        System.out.println("Hay "+contador+" alumnos con notas inferiores a la media");
     }
 
 
