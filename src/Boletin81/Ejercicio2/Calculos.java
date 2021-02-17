@@ -30,7 +30,7 @@ public class Calculos {
         for(int i=0;i< notas.length;i++){
            if(notas[i] > mayor)
                 mayor = notas[i];
-        }
+        } 
         System.out.println("La mayor nota es: "+mayor);
     }
 
