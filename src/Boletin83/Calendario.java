@@ -14,69 +14,41 @@ public class Calendario {
      * Salidas: Ninguna
      */
     public static void crearArray(int[][] calendario) {
-        for (int i = 0; i < calendario.length; i++) {
-            switch (i) {
-                case 0:
-                    for (int j = 0; j < calendario[0].length; j++) {
-                        calendario[i][j] = (int) (Math.floor(Math.random() * (15 - 21 + 1) + 21));
-                    }
-                    break;
-                case 1:
-                    for (int j = 0; j < calendario[0].length; j++) {
-                        calendario[i][j] = (int) (Math.floor(Math.random() * (15 - 21 + 1) + 21));
-                    }
-                    break;
-                case 2:
-                    for (int j = 0; j < calendario[0].length; j++) {
-                        calendario[i][j] = (int) (Math.floor(Math.random() * (17 - 23 + 1) + 23));
-                    }
-                    break;
-                case 3:
-                    for (int j = 0; j < calendario[0].length; j++) {
-                        calendario[i][j] = (int) (Math.floor(Math.random() * (20 - 26 + 1) + 26));
-                    }
-                    break;
-                case 4:
-                    for (int j = 0; j < calendario[0].length; j++) {
-                        calendario[i][j] = (int) (Math.floor(Math.random() * (24 - 30 + 1) + 30));
-                    }
-                    break;
-                case 5:
-                    for (int j = 0; j < calendario[0].length; j++) {
-                        calendario[i][j] = (int) (Math.floor(Math.random() * (28 - 34 + 1) + 34));
-                    }
-                    break;
-                case 6:
-                    for (int j = 0; j < calendario[0].length; j++) {
-                        calendario[i][j] = (int) (Math.floor(Math.random() * (31 - 37 + 1) + 37));
-                    }
-                    break;
-                case 7:
-                    for (int j = 0; j < calendario[0].length; j++) {
-                        calendario[i][j] = (int) (Math.floor(Math.random() * (31 - 37 + 1) + 37));
-                    }
-                    break;
-                case 8:
-                    for (int j = 0; j < calendario[0].length; j++) {
-                        calendario[i][j] = (int) (Math.floor(Math.random() * (28 - 34 + 1) + 34));
-                    }
-                    break;
-                case 9:
-                    for (int j = 0; j < calendario[0].length; j++) {
-                        calendario[i][j] = (int) (Math.floor(Math.random() * (24 - 30 + 1) + 30));
-                    }
-                    break;
-                case 10:
-                    for (int j = 0; j < calendario[0].length; j++) {
-                        calendario[i][j] = (int) (Math.floor(Math.random() * (18 - 24 + 1) + 24));
-                    }
-                    break;
-                case 11:
-                    for (int j = 0; j < calendario[0].length; j++) {
-                        calendario[i][j] = (int) (Math.floor(Math.random() * (16 - 22 + 1) + 21));
-                    }
-                    break;
-            }
+        for (int j = 0; j < calendario[0].length; j++) {
+            calendario[0][j] = (int) (Math.floor(Math.random() * (15 - 21 + 1) + 21));
+        }
+        for (int j = 0; j < calendario[0].length; j++) {
+            calendario[1][j] = (int) (Math.floor(Math.random() * (15 - 21 + 1) + 21));
+        }
+        for (int j = 0; j < calendario[0].length; j++) {
+            calendario[2][j] = (int) (Math.floor(Math.random() * (17 - 23 + 1) + 23));
+        }
+        for (int j = 0; j < calendario[0].length; j++) {
+            calendario[3][j] = (int) (Math.floor(Math.random() * (20 - 26 + 1) + 26));
+        }
+        for (int j = 0; j < calendario[0].length; j++) {
+            calendario[4][j] = (int) (Math.floor(Math.random() * (24 - 30 + 1) + 30));
+        }
+        for (int j = 0; j < calendario[0].length; j++) {
+            calendario[5][j] = (int) (Math.floor(Math.random() * (28 - 34 + 1) + 34));
+        }
+        for (int j = 0; j < calendario[0].length; j++) {
+            calendario[6][j] = (int) (Math.floor(Math.random() * (31 - 37 + 1) + 37));
+        }
+        for (int j = 0; j < calendario[0].length; j++) {
+            calendario[7][j] = (int) (Math.floor(Math.random() * (31 - 37 + 1) + 37));
+        }
+        for (int j = 0; j < calendario[0].length; j++) {
+            calendario[8][j] = (int) (Math.floor(Math.random() * (28 - 34 + 1) + 34));
+        }
+        for (int j = 0; j < calendario[0].length; j++) {
+            calendario[9][j] = (int) (Math.floor(Math.random() * (24 - 30 + 1) + 30));
+        }
+        for (int j = 0; j < calendario[0].length; j++) {
+            calendario[10][j] = (int) (Math.floor(Math.random() * (18 - 24 + 1) + 24));
+        }
+        for (int j = 0; j < calendario[0].length; j++) {
+            calendario[11][j] = (int) (Math.floor(Math.random() * (16 - 22 + 1) + 21));
         }
 
         for (int i = 0; i < calendario.length; i++) {
